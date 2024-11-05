@@ -1,0 +1,14 @@
+.container{
+    font-family: Montserrat;
+    font-weight: 300;
+}
+
+button{
+    border-radius: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+th{
+    text-transform: uppercase;
+}

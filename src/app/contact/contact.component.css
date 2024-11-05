@@ -1,0 +1,44 @@
+div{
+  margin: 50px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire */
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px; /* Espacement entre le label et le champ */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 15px; /* Espacement entre les champs */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+  }
+  
+  .contact-form button {
+    padding: 10px 15px; /* Espacement interne */
+    background-color: #4CAF50; /* Couleur de fond verte */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Pointeur au survol */
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+  }
+  
+  span{
+    margin: 0;
+    border-radius: 0;
+  }
+
+  input, textarea{
+    border-radius: 0 !important;
+  }

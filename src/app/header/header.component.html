@@ -12,11 +12,11 @@
                 </div>
                 <div class="desktop_menu" [class.mobile_menu]="afficheMobileMenu">
                     <ul>
-                        <li (click)="closeMenu()">Home</li>
-                        <li (click)="closeMenu()">Qui suis-je</li>
-                        <li (click)="closeMenu()">Service</li>
-                        <li (click)="closeMenu()">Projects</li>
-                        <li (click)="closeMenu()">Contact</li>
+                        <li (click)="closeMenu()" routerLink="home">Home</li>
+                        <li (click)="closeMenu()" routerLink="about">Qui suis-je</li>
+                        <li (click)="closeMenu()" routerLink="service">Service</li>
+                        <li (click)="closeMenu()" routerLink="projet">Projects</li>
+                        <li (click)="closeMenu()" routerLink="contact">Contact</li>
                     </ul>
                 </div>
             </div>

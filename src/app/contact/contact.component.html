@@ -1,0 +1,35 @@
+<div>
+  <form [formGroup]="contactForm" novalidate  class="contact-form">
+      <label for="name">Nom:</label>
+      <input type="text" formControlName="name" name="name" required>
+
+      <span class="alert alert-danger" role="alert" *ngIf="contactForm.get('name')?.hasError('maxlength') && contactForm.get('name')?.touched">
+        12 caratère au maximum
+      </span>
+      
+      <span  class="alert alert-danger" role="alert" *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched">
+        Le chanps es vide
+      </span>
+      
+      <label for="email">Email:</label>
+      <input type="text" name="email" formControlName="email" required>
+
+      <span class="alert alert-danger" role="alert" *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+        Le chanps es vide
+      </span>
+
+      <span class="alert alert-danger" role="alert" *ngIf="contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched">
+        email incorect
+      </span>
+    
+      <label for="message">Message:</label>
+      <textarea formControlName="message" name="message" required></textarea>
+
+      <span class="alert alert-danger" role="alert" *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched">
+        Le chanps es vide
+      </span>
+    
+      <button type="submit" (click)="onSubmit()">Envoyer</button>
+    </form>
+</div>
+  
