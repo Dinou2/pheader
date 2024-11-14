@@ -14,6 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ServiceComponent } from './service/service.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     ProjetComponent,
     ServiceComponent,
     NotfoundComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

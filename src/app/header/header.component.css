@@ -46,8 +46,8 @@ header {
 }
 
 .desktop_menu ul li {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     display: inline-block;
     text-transform: uppercase;
     cursor: pointer;
@@ -60,7 +60,7 @@ header {
     color: #007bff;
 }
 
-.desktop_menu ul li::after {
+.desktop_menu ul li.menu::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -74,6 +74,16 @@ header {
 
 .desktop_menu ul li:hover::after {
     transform: scaleX(1);
+}
+
+.cv-dowd{
+    background-color: #007bff;
+    padding: 12px !important;
+    color: #fff;
+}
+
+.cv-dowd:hover{
+    color: #fff !important;
 }
 
 /* Icône menu mobile */
@@ -96,7 +106,7 @@ header {
         left: -500px;
         top: 60px;
         width: 50%;
-        height: 250px;
+        min-height: 50px;
         background-color: #e3e5e9;
         z-index: 500;
     }
