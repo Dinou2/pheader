@@ -148,7 +148,7 @@ color: rgba(0, 0, 0, 0.64);
 @media (max-width: 530px) {
 
     .title-qui{
-        margin: 50px 20px;
+        margin: 50px 5px;
         h3{
             text-align: center;
             font-size: 1.5rem !important;
@@ -266,86 +266,9 @@ color: rgba(0, 0, 0, 0.64);
 
 
 /*section projet */
-.conait-projet{
-    margin: 15px 10%;
-}
 
 
-.cont-pro{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff;
-    display: flex;
-   
-}
 
-.cont-pro:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px #00000033;
-}
-
-.media.blog-media {
-    /* margin-top: 30px; */
-    /* position: relative; */
-    /* display: block; */
-    font-size: 15px;
-     margin: 10px 20px;
-}
-
-
-@media (min-width:992px) {
-    .media.blog-media>a {
-        display: table-cell;
-        vertical-align: top;
-        min-width: 200px
-    }
-}
-.media.blog-media>a img {
-    width: 100%
-}
-
-/* .media.blog-media .media-body {
-    border: 1px solid #efeff3;
-    padding: 30px 30px 10px;
-    font-size: 14px;
-    background: #fff;
-    border-top: none
-} */
-
-@media (min-width:992px) {
-    .media.blog-media .media-body {
-        padding: 15px 20px 10px;
-        border-top: 1px solid #efeff3;
-        border-left: none;
-        display: table-cell;
-        vertical-align: top
-    }
-}
-
-/* @media (min-width:1200px) {
-   .media-body {
-        padding: 30px 20px 10px
-    }
-} */
-
-
-@media (min-width:1200px) {
-   .media-body h5 {
-        margin-bottom: 15px;
-        font-size: 18px;
-        text-transform: uppercase;
-    }
-}
-
- a.post-link {
-    display: block;
-    color: #075627;
-    font-size: 11px;
-    padding: 23px 0;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 400
-}
 
 /*projets*/
 .conain-proj{
@@ -376,7 +299,21 @@ color: rgba(0, 0, 0, 0.64);
 
 
 /*MOBILE*/
+@media (max-width: 530px) {
 
+    .conain-proj{
+        margin: 5px 5px;
+    }
+
+    .card-body{
+        background: linear-gradient(60deg, #075627 42%, rgba(27,27,27,1) 100%);
+        width: 100%;
+        padding: 25px 0;
+        color: #fff;
+        font-weight: 700;
+    }
+    
+}
 /* Media query for mobile devices */
 
   
