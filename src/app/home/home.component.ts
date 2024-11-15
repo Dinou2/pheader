@@ -21,15 +21,15 @@ export class HomeComponent {
 
   projs = [
     {
-      imgProjUrl:"assets/image/projets/p1.png",
+      imgProjUrl:"assets/image/projets/p3.png",
       titlProj: "Projet web N°1"
     },
     {
-      imgProjUrl:"assets/image/projets/p2.png",
+      imgProjUrl:"assets/image/projets/p4.png",
       titlProj: "Projet web N°2"
     },
     {
-      imgProjUrl:"assets/image/projets/p6.png",
+      imgProjUrl:"assets/image/projets/p3.png",
       titlProj: "Projet web N°3"
     },
     {
