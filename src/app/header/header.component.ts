@@ -18,4 +18,11 @@ export class HeaderComponent {
     this.afficheMobileMenu=false;
     this.iconFul='bi bi-list'
   }
+
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'assets/cv/CV_Amos_Gbedigassi.pdf'; // Chemin vers le fichier CV
+    link.download = 'CV_Amos_Gbedigassi.pdf';    // Nom du fichier téléchargé
+    link.click();
+  }
 }
