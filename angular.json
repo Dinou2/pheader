@@ -39,7 +39,8 @@
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+              "node_modules/bootstrap-icons/font/bootstrap-icons.min.css",
+              "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
             ],
             "scripts": []
           },
@@ -103,7 +104,13 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+    "repo": "https://github.com/Dinou2/pheader",
+    "branch": "gh-pages",
+    "name": "Dinou2",
+    "email": "gbedigassiamos117@gmail.com"
+  }
         }
       }
     }

@@ -85,53 +85,15 @@
         <div class="col-md-3 col-sm-3 col-3 "> <hr> </div>
     </div>
 
-    <div class="row conait-projet">
-        <div class="col-md-6 col-sm-12 col-12 ">
-            <div class="media blog-media cont-pro">
-                <a href="#"><img class="d-flex" src="assets/image/p1.webp" alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <h5 class="mt-0">Explicabo magnam </h5>
-                    Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat error.
-                    <a href="#" class="post-link">Read More</a>
-                </div>
+    <div class="row conain-proj">
+        <div class="col-md-4 projs" *ngFor="let proj of projs">
+          <div class="card card-proj">
+            <img [src]="proj.imgProjUrl" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">{{proj.titlProj}} </p>
             </div>
+          </div>
         </div>
-
-        <div class="col-md-6 col-sm-12 col-12 ">
-            <div class="media blog-media cont-pro">
-                <a href="#"><img class="d-flex" src="assets/image/p1.webp" alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <h5 class="mt-0">Explicabo magnam </h5>
-                    Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat error.
-                    <a href="#" class="post-link">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6 col-sm-12 col-12 ">
-            <div class="media blog-media cont-pro">
-                <a href="#"><img class="d-flex" src="assets/image/p1.webp" alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <h5 class="mt-0">Explicabo magnam </h5>
-                    Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat error.
-                    <a href="#" class="post-link">Read More</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-sm-12 col-12 ">
-            <div class="media blog-media cont-pro">
-                <a href="#"><img class="d-flex" src="assets/image/p1.webp" alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <h5 class="mt-0">Explicabo magnam </h5>
-                    Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat error.
-                    <a href="#" class="post-link">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    
+      </div>
+   
 </div>

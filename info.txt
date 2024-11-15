@@ -44,3 +44,49 @@ if (isset($posdata) && !empty($posdata)) {
 
 }
 ?>
+
+    <div class="row conait-projet">
+        <div class="col-md-6 col-sm-12 col-12 ">
+            <div class="media blog-media cont-pro">
+                <a href="#"><img class="d-flex" src="assets/image/p1.webp" alt="Generic placeholder image"></a>
+                <div class="media-body">
+                    <h5 class="mt-0">Explicabo magnam </h5>
+                    Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat error.
+                    <a href="#" class="post-link">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-12 ">
+            <div class="media blog-media cont-pro">
+                <a href="#"><img class="d-flex" src="assets/image/p1.webp" alt="Generic placeholder image"></a>
+                <div class="media-body">
+                    <h5 class="mt-0">Explicabo magnam </h5>
+                    Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat error.
+                    <a href="#" class="post-link">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-sm-12 col-12 ">
+            <div class="media blog-media cont-pro">
+                <a href="#"><img class="d-flex" src="assets/image/p1.webp" alt="Generic placeholder image"></a>
+                <div class="media-body">
+                    <h5 class="mt-0">Explicabo magnam </h5>
+                    Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat error.
+                    <a href="#" class="post-link">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-12 ">
+            <div class="media blog-media cont-pro">
+                <a href="#"><img class="d-flex" src="assets/image/p1.webp" alt="Generic placeholder image"></a>
+                <div class="media-body">
+                    <h5 class="mt-0">Explicabo magnam </h5>
+                    Sodales aliquid, in eget ac cupidatat velit autem numquam ullam ducimus occaecati placeat error.
+                    <a href="#" class="post-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>

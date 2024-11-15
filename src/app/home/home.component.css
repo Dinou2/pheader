@@ -233,3 +233,28 @@ color: rgba(0, 0, 0, 0.64);
     font-weight: 400
 }
 
+/*projets*/
+.conain-proj{
+    margin: 25px 10%;
+}
+
+.flex-proj{
+    display: flex;
+}
+.card-proj{
+    img{
+        width: 100%;
+    }
+}
+
+.card-body{
+    background: linear-gradient(60deg, #075627 42%, rgba(27,27,27,1) 100%);
+    width: 100%;
+    padding: 25px 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+.projs{
+    cursor: pointer;
+}
