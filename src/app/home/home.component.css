@@ -12,12 +12,24 @@
     min-height: 50px;
     /* background: #01564f; */
     min-height: 45vh;
-    background-image: url('fond3.jpg'); /* Image en fond */
+    background-image: url('fond4.jpg'); /* Image en fond */
     background-size: cover; /* L'image couvre l'intégralité du conteneur */
     background-position: center; /* Centrage de l'image */
     background-repeat: no-repeat; /* Pas de répétition */
     position: relative; /* Permet de positionner l'élément enfant correctement */
     margin: 0 1px;
+}
+
+.bak{
+    /* min-height: 10vh; */
+    background: linear-gradient(60deg, #01235696 42%, rgba(1, 74, 35, 0.848) 100%);
+   
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* width: 100%; */
 }
 
 .container {
@@ -28,7 +40,7 @@
 .bannier-text{
     color: #fff;
     text-align: center;
-    margin: 100px 0;
+    margin: 250px 0;
 
     h4{
         font-size: 4rem;

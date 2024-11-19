@@ -11,13 +11,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ProjetComponent implements OnInit {
 
  mesProjets = [
-  { title: 'Projet Web 1', category: 'Categorie 1', description: 'Description Web 1', image: 'assets/image/projets/p1.png' },
-  { title: 'Projet Graphisme 1', category: 'Categorie 2', description: 'Description Graphisme 1', image: 'assets/image/projets/p2.png' },
-  { title: 'Projet APK 2', category: 'Categorie 3', description: 'Description APK 1', image: 'assets/image/projets/p1.png' },
-  { title: 'Projet Graphisme 2', category: 'Categorie 1', description: 'Description Graphisme 1', image: 'assets/image/projets/p3.png' },
-  { title: 'Projet APK 3', category: 'Categorie 2', description: 'Description APK 1', image: 'assets/image/projets/p4.png' },
-  { title: 'Projet Graphisme 3', category: 'Categorie 3', description: 'Description Graphisme 1', image: 'assets/image/projets/p5.png' },
-  { title: 'Projet APK 4', category: 'Categorie 2', description: 'Description APK 1', image: 'assets/image/projets/p6.png' },
+  { title: 'Projet Web 1', category: 'Categorie 1', description: 'Description Web 1', image: 'assets/image/projets/p1.png',isZoomed: false },
+  { title: 'Projet Graphisme 1', category: 'Categorie 2', description: 'Description Graphisme 1', image: 'assets/image/projets/p2.png',isZoomed: false },
+  { title: 'Projet APK 2', category: 'Categorie 3', description: 'Description APK 1', image: 'assets/image/projets/p1.png',isZoomed: false },
+  { title: 'Projet Graphisme 2', category: 'Categorie 1', description: 'Description Graphisme 1', image: 'assets/image/projets/p3.png', isZoomed: false},
+  { title: 'Projet APK 3', category: 'Categorie 2', description: 'Description APK 1', image: 'assets/image/projets/p4.png',isZoomed: false },
+  { title: 'Projet Graphisme 3', category: 'Categorie 3', description: 'Description Graphisme 1', image: 'assets/image/projets/p4.png',isZoomed: false },
 
  ];
 
@@ -35,4 +34,5 @@ export class ProjetComponent implements OnInit {
   this.activeTab = '';
   this.filterProjets = this.mesProjets.filter(mesProjet => mesProjet.category)
  }
+
 }
