@@ -29,7 +29,7 @@
                 Je suis Amos Gbedigassi, un graphiste et développeur web passionné, spécialisé dans la création de solutions visuelles et fonctionnelles pour des projets variés. Avec plus de trois ans d'expérience dans le domaine du design graphique et du développement web, je combine créativité et compétences techniques pour offrir des résultats de haute qualité.
             </div>
             <div>
-                <button class="btn btn-primary">DECOUVREZ PLUS</button>
+                <button class="btn btn-primary" routerLink="/home">DECOUVREZ PLUS</button>
             </div>
         </div>
     </div>
@@ -37,14 +37,14 @@
     <div class="row title-qui">
         <div class="col-md-3 col-sm-3 col-3 "> <hr>  </div>
         <div class="col-md-6 col-sm-6 col-6 ">
-            <h3>MES COMPETANCES</h3>
+            <h3>MES COMPETENCES</h3>
         </div>
         <div class="col-md-3 col-sm-3 col-3 "> <hr> </div>
     </div>
 
     <div class="row contain-service justify-content-center">
         <div class="col-md-3 col-sm-12 col-12">
-            <div class="card c1" >
+            <div class="card c1">
                 <span class="icon-c-serv"><img src="assets/icons/icons8-angular.svg" alt=""></span>
                 <div class="title-card">
                     <h3>Angular</h3>
@@ -87,7 +87,7 @@
 
     <div class="row conain-proj">
         <div class="col-md-4 projs" *ngFor="let proj of projs">
-          <div class="card card-proj">
+          <div class="card card-proj" routerLink="/projet">
             <img [src]="proj.imgProjUrl" class="card-img-top">
             <div class="card-body">
               <p class="card-text">{{proj.titlProj}} </p>

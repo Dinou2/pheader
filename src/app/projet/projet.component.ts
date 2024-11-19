@@ -10,51 +10,29 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProjetComponent implements OnInit {
 
-  contactForm!: FormGroup; 
+ mesProjets = [
+  { title: 'Projet Web 1', category: 'Categorie 1', description: 'Description Web 1', image: 'assets/image/projets/p1.png' },
+  { title: 'Projet Graphisme 1', category: 'Categorie 2', description: 'Description Graphisme 1', image: 'assets/image/projets/p2.png' },
+  { title: 'Projet APK 2', category: 'Categorie 3', description: 'Description APK 1', image: 'assets/image/projets/p1.png' },
+  { title: 'Projet Graphisme 2', category: 'Categorie 1', description: 'Description Graphisme 1', image: 'assets/image/projets/p3.png' },
+  { title: 'Projet APK 3', category: 'Categorie 2', description: 'Description APK 1', image: 'assets/image/projets/p4.png' },
+  { title: 'Projet Graphisme 3', category: 'Categorie 3', description: 'Description Graphisme 1', image: 'assets/image/projets/p5.png' },
+  { title: 'Projet APK 4', category: 'Categorie 2', description: 'Description APK 1', image: 'assets/image/projets/p6.png' },
 
-  constructor(
-    private fb: FormBuilder, 
-    private _contactService: ContactService,
-    private route: ActivatedRoute,
-    private router:Router
-  ) {}
+ ];
 
-  ngOnInit() {
-    // Initialiser le formulaire
-    this.contactForm = this.fb.group({
-      name: ['', [Validators.required, Validators.maxLength(12)]],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
-    });
+ ngOnInit() { }
 
-    // Récupérer l'ID du contact à partir des paramètres de route
-    const routeParams = this.route.snapshot.params;
-    console.log(routeParams['idCont']);
+ filterProjets = this.mesProjets;
+ activeTab = 'Mes Projets';
 
-    // Charger les données du contact
-    this._contactService.getContactById(routeParams['idCont']).subscribe((response: any) => {
-      // console.log(response);
-      // Mettre à jour les champs du formulaire avec les données récupérées
-      if (response.data) {
-        this.contactForm.patchValue({
-          name: response.data.namCont,
-          email: response.data.mailCont,
-          message: response.data.messageCont
-        });
-      }
-    });
-  }
-
-  onEdit() {
-    // Préparer les données pour la mise à jour, en incluant l'ID
-    const updatedContact = {
-      idCont: this.route.snapshot.params['idCont'],
-      ...this.contactForm.value
-    };
-
-    // Envoyer les données mises à jour au service
-    this._contactService.editContact(updatedContact).subscribe(() => {
-      this.router.navigate(['']);
-    });
-  }
+ filterProj(category: string):void{
+  this.activeTab = category;
+  this.filterProjets = this.mesProjets.filter(mesProjet => mesProjet.category === category)
+ }
+  
+ projetsAll(){
+  this.activeTab = '';
+  this.filterProjets = this.mesProjets.filter(mesProjet => mesProjet.category)
+ }
 }

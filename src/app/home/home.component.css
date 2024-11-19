@@ -10,8 +10,14 @@
 
 .row-bg{
     min-height: 50px;
-    background: rgb(2,0,36);
-    background: linear-gradient(60deg, rgba(2,0,36,1) 0%, #075627 42%, rgba(27,27,27,1) 100%);
+    /* background: #01564f; */
+    min-height: 45vh;
+    background-image: url('fond3.jpg'); /* Image en fond */
+    background-size: cover; /* L'image couvre l'intégralité du conteneur */
+    background-position: center; /* Centrage de l'image */
+    background-repeat: no-repeat; /* Pas de répétition */
+    position: relative; /* Permet de positionner l'élément enfant correctement */
+    margin: 0 1px;
 }
 
 .container {
@@ -65,8 +71,7 @@
 
     .row-bg{
         min-height: 50px;
-        background: linear-gradient(60deg, rgba(2, 0, 36, 0.879) 0%, #075627 42%, rgb(27, 27, 27) 100%);
-
+        background-color:#01564f ;
     }
 
     .bannier-text{
@@ -119,7 +124,7 @@
     h3{
         text-align: center;
         font-size: 3.2rem !important;
-        color: #075627;
+        color: #01564f;
     }
 }
 .me-descrip{
@@ -130,7 +135,7 @@ color: rgba(0, 0, 0, 0.64);
         padding: 10px;
         border-radius: 0;
         margin: 15px 0;
-        background-color: #075627;
+        background-color: #01564f;
         border: none;
     }
 }
@@ -152,7 +157,7 @@ color: rgba(0, 0, 0, 0.64);
         h3{
             text-align: center;
             font-size: 1rem !important;
-            color: #075627;
+            color: #01564f;
             font-weight: 700;
         }
     }
@@ -285,7 +290,7 @@ color: rgba(0, 0, 0, 0.64);
 }
 
 .card-body{
-    background: linear-gradient(60deg, #075627 42%, rgba(27,27,27,1) 100%);
+    background: linear-gradient(60deg, #01564f 42%, rgba(27,27,27,1) 100%);
     width: 100%;
     padding: 25px 0;
     color: #fff;
@@ -306,7 +311,7 @@ color: rgba(0, 0, 0, 0.64);
     }
 
     .card-body{
-        background: linear-gradient(60deg, #075627 42%, rgba(27,27,27,1) 100%);
+        background: linear-gradient(60deg, #01564f 42%, rgba(27,27,27,1) 100%);
         width: 100%;
         padding: 25px 0;
         color: #fff;

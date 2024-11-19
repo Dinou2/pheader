@@ -12,10 +12,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ServiceComponent } from './service/service.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -25,11 +23,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AboutComponent,
     ContactComponent,
     ProjetComponent,
-    ServiceComponent,
     NotfoundComponent,
     FooterComponent,
-    LoginComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
