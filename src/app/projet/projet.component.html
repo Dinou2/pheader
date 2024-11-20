@@ -23,12 +23,14 @@
 
   <div class="row mt-3">
     <div class="col-md-4" *ngFor="let mesProjet of filterProjets">
-      <div class="card" >
-        <img [src]="mesProjet.image" alt="" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">{{mesProjet.title}}</h5>
-          <p class="card-text">{{mesProjet.description}}</p>
-        </div>
+      <div class="card">
+        <a [routerLink]="['/projet', mesProjet.id]">
+          <img [src]="mesProjet.image" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{mesProjet.title}}</h5>
+            <p class="card-text">{{mesProjet.description}}</p>
+          </div> 
+        </a>
       </div>
     </div>
   </div>

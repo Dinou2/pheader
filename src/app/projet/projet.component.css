@@ -8,6 +8,10 @@
   margin: 0 1px;
 }
 
+a{
+  text-decoration: none;
+}
+
 .title-Po {
   min-height: 10vh;
   background: #006f6699; /* Couleur semi-transparente */

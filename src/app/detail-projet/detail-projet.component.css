@@ -1,0 +1,55 @@
+.row-bg {
+    min-height: 45vh;
+    background-image: url('fond2.jpg'); /* Image en fond */
+    background-size: cover; /* L'image couvre l'intégralité du conteneur */
+    background-position: center; /* Centrage de l'image */
+    background-repeat: no-repeat; /* Pas de répétition */
+    position: relative; /* Permet de positionner l'élément enfant correctement */
+    margin: 0 1px;
+  }
+  
+  .title-Po {
+    min-height: 10vh;
+    background: #006f6699; /* Couleur semi-transparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+  }
+
+  .no-projet{
+    background-image: url('rb_2148578339.png'); /* Image en fond */
+    background-size: cover; /* L'image couvre l'intégralité du conteneur */
+    background-position: center; /* Centrage de l'image */
+    background-repeat: no-repeat; /* Pas de répétition */
+    position: relative;
+    margin: 0 500px;
+    padding: 45vh 0;
+    text-align: center;
+  }
+
+  @media (max-width: 530px) {
+
+    .no-projet{
+        background-image: url('rb_2148578339.png'); /* Image en fond */
+        background-size: cover; /* L'image couvre l'intégralité du conteneur */
+        background-position: center; /* Centrage de l'image */
+        background-repeat: no-repeat; /* Pas de répétition */
+        position: relative;
+        margin: 0 20px;
+        padding: 40vh 0;
+        text-align: center;
+      }
+
+}
